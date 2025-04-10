@@ -1,15 +1,13 @@
 package com.clinic.model;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 
 @Entity
 @Getter
 @Setter
+@Inheritance(strategy = InheritanceType.JOINED)
 public class User {
 
     @Id
@@ -17,5 +15,5 @@ public class User {
     private Long Id;
     private String userName;
     private String password;
-    private String role; //USER, DOCTOR, ADMIN
+    private String role; //PATIENT, DOCTOR, ADMIN
 }
