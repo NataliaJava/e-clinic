@@ -74,6 +74,12 @@
             <scope>provided</scope>
         </dependency>
 
+        <dependency>
+            <groupId>jakarta.persistence</groupId>
+            <artifactId>jakarta.persistence-api</artifactId>
+            <version>3.0.0</version>
+        </dependency>
+
         <!-- Swagger/OpenAPI for API documentation -->
         <dependency>
             <groupId>io.springfox</groupId>
